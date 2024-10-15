@@ -29,7 +29,6 @@ input[type=text], input[type=email], input[type=date], textarea{
     border: 2px solid #0169cc;
     border-radius: 5px;
     padding: 1%;
-    background-color: white ;
 }
 
 .obv::after {
@@ -38,16 +37,8 @@ input[type=text], input[type=email], input[type=date], textarea{
 }
 
 .osivi{
-    background-color: gray !important;
     cursor: pointer;
-    border: 2px solid black !important;
-}
-.osivi > * {
-    background-color: gray !important;
-    border-radius: 20px;
-}
-.osivi > input,textarea{
-    border-color: black;
+    opacity: 0.5;
 }
 
 #main {
@@ -172,7 +163,7 @@ input[type=text], input[type=email], input[type=date], textarea{
     text-align: center;
     margin-bottom: 5%;
     background-color: white;
-    transition: background-color 0.3s ease;
+    transition: opacity 0.5s ease;
 }
 #izdaja>input {
     width: 20%;
@@ -197,7 +188,7 @@ input[type=text], input[type=email], input[type=date], textarea{
     text-align: center;
     margin-bottom: 5%;
     background-color: white;
-    transition: background-color 0.3s ease;
+    transition: opacity 0.5s ease;
 }
 
 #podalsanje>p {
@@ -221,7 +212,7 @@ input[type=text], input[type=email], input[type=date], textarea{
     padding: fit-content;
     text-align: center;
     background-color: white;
-    transition: background-color 0.3s ease;
+    transition: opacity 0.5s ease;
 }
 
 #vracilo>p {
@@ -238,15 +229,16 @@ input[type=text], input[type=email], input[type=date], textarea{
     width: 20%;
 }
 
-#vracilo>#vrac_dat {
+#vracilo>#dat_vrac_kz {
     font-weight: normal;
 }
 
-#razlog {
+#vracilo>textarea {
     resize: none;
     width: 50%;
     height: 100px;
 }
+
 
 #oddaj {
     text-align: center;

@@ -110,7 +110,7 @@ izd.addEventListener('click', function() {
 
     pocistiVnose(pod);
     pocistiVnose(vrac);
-    
+
     dolocilo_input = 1;
 });
 pod.addEventListener('click', function() {
