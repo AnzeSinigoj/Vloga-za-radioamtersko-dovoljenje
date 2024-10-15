@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <title>Vloga za radioamatersko dovoljenje</title>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="slike/ikona.ico">
+</head>
+
+<body>
+    <div id="main">
+        <div id="slika"></div>
+        <div id="obrazec-main">
+            <div id="gnaslov">
+                <h1>Vloga za radioamatersko dovoljenje</h1>
+                <p>Osnovni podatki:</p>
+            </div>
+            <form method="POST" action="#" id="dejanska_forma">
+                <div id="osnovni">
+                <div>
+                <div id="ime_priimek">
+                    <div>
+                        <p class="obv">Ime:</p>
+                        <input type="text" id="ime">
+                    </div>
+                    <div>
+                        <p class="obv">Priimek:</p>
+                        <input type="text" id="priimek">
+                    </div>
+                </div>
+                <div id="davcna">
+                    <p class="obv">Davčna številka:</p>
+                    <input type="text" placeholder="SI12345678" id="davcnaST">
+                </div>
+                <div id="tel_mail">
+                    <div>
+                        <p>Telefonska številka:</p>
+                        <input type="text" placeholder="123-456-789" id="telefonska">
+                    </div>
+                    <div>
+                        <p>Elektronski naslov:</p>
+                        <input type="email" id="mail">
+                    </div>
+                </div>
+                <div id="naslov">
+                    <p class="obv">Ulica ter hišna številka:</p>
+                    <input type="text" id="ulica_hisna_st">
+                </div>
+                <div id="mestoSt">
+                    <div>
+                        <p class="obv">Mesto:</p>
+                        <input type="text" id="mesto">
+                    </div>
+                    <div>
+                        <p class="obv">Poštna števlika:</p>
+                        <input type="text" id="postnaST">
+                    </div>
+                </div>
+            </div>
+            </div>
+                <div id="prosnja">
+                    <h1>Prosim za:</h1>
+                    <p>(Prosim izberite eno izmed možnosti)</p>
+                </div>
+                <div id="izbira">
+                    <div id="izdaja">
+                        <p>Izdajo radioamaterskega dovoljenja po opravljenem izpitu dne:</p>
+                        <input type="date" id="dat">
+                        <p>Želim enega izmed naslednjih klicnih znakov:</p>
+                        1: <input type="text" placeholder="S5XYYY" id="k1">
+                        2: <input type="text" placeholder="S5XYYY" id="k2">
+                        3: <input type="text" placeholder="S5XYYY" id="k3">
+                    </div>
+                    <div id="podalsanje">
+                        <p>Podaljšanje radioamaterskega dovoljenja:</p>
+                        <input type="text" placeholder="(klicni znak)" id="k_pod">
+                        <p>Izdanega dne:</p>
+                        <input type="date" id="dat_izdaje">
+                    </div>
+                    <div id="vracilo"> 
+                        <p>Vračilo radioamaterskega dovoljenja:</p>
+                        <input type="text" id="vrac_kz" placeholder="(klicni znak)">
+                        <p>Ki velja do dne:</p>
+                        <input type="date" id="dat_vrac_kz">
+                        <p>Izdaja novega radioamaterskega dovoljenja z novim klicnim znakom.</p>
+                        <p>Želim enega izmed naslednjih klicnih znakov:</p>
+                        1: <input type="text" placeholder="S5XYYY" id="nk1">
+                        2: <input type="text" placeholder="S5XYYY" id="nk2">
+                        3: <input type="text" placeholder="S5XYYY" id="nk3">
+                        <p>Navedite razloge menjave klicnega znaka ter jih utemeljite:</p>
+                        <textarea id="razlog"></textarea>
+                    </div>
+                </div>
+                <div id="oddaj">
+                    <input type="submit" value="Oddaj dokument">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="skripta.js"></script>
+</body>
+
+</html>

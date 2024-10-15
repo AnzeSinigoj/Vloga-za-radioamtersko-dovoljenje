@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: font_obic;
+    src: url(fonti/MPLUSCodeLatin.ttf);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: font_obic;
+    font-size: 12px;
+}
+
+/*
+
+#0169cc -tmna
+#71a1fa -svetla
+
+*/
+
+div {
+    padding-bottom: 3%;
+}
+input[type=text], input[type=email], input[type=date], textarea{
+    border: 2px solid #0169cc;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: white ;
+}
+
+.obv::after {
+    content: "*";
+    color: red;
+}
+
+.osivi{
+    background-color: gray !important;
+    cursor: pointer;
+    border: 2px solid black !important;
+}
+.osivi > * {
+    background-color: gray !important;
+    border-radius: 20px;
+}
+.osivi > input,textarea{
+    border-color: black;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#slika {
+    width: 20%;
+    height: 10%;
+    background-image: url("slike/akos_logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1% auto;
+}
+
+#obrazec-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 0px;
+    border: 3px solid #71a1fa;
+    border-radius: 25px;
+    max-width: fit-content;
+    margin-bottom: 5%;
+    background: #0169cc;
+}
+
+#obrazec-main>form>#osnovni {
+    padding: 3%;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 2px solid #71a1fa;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+#gnaslov {
+    padding-top: 0;
+    padding-bottom: 5%;
+    text-align: center;
+    color: white;
+    font-family: system-ui;
+}
+
+#gnaslov>h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ime_priimek {
+    display: flex;
+    max-width: fit-content;
+}
+
+#ime_priimek>div {
+    padding: 0;
+    text-align: left;
+    margin-right: 2%;
+}
+
+#davcna {
+    width: 100%;
+}
+#davcna>input{
+    width: 100%;
+}
+
+#tel_mail {
+    display: flex;
+    max-width: fit-content;
+}
+
+#tel_mail>div {
+    padding: 0;
+    text-align: left;
+    margin-right: 2%;
+}
+
+#naslov {
+    width: 100%;
+}
+#naslov>input{
+    width: 100%;
+}
+
+#mestoSt {
+    display: flex;
+    max-width: fit-content;
+    
+}
+
+#mestoSt>div {
+    padding: 0;
+    text-align: left;
+    margin-right: 2%;
+}
+
+#prosnja {
+    padding-bottom: 5%;
+    text-align: center;
+    color: white;
+    font-family: system-ui;
+}
+
+#prosnja>h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#izdaja {
+    border: 2px solid #71a1fa;
+    border-radius: 20px;
+    width: 100%;
+    padding: fit-content;
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+#izdaja>input {
+    width: 20%;
+    font-weight: bold;
+}
+
+#izdaja>p {
+    padding: 2% 0;
+}
+
+#izdaja>#dat {
+    width: 30%;
+    text-align: center;
+    font-weight: normal;
+}
+
+#podalsanje {
+    border: 2px solid #71a1fa;
+    border-radius: 20px;
+    width: 100%;
+    padding: fit-content;
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+#podalsanje>p {
+    padding: 2% 0;
+}
+
+#podalsanje>#k_pod {
+    width: 30%;
+    font-weight: bold;
+}
+
+#podalsanje>input {
+    width: 35%;
+    text-align: center;
+}
+
+#vracilo {
+    border: 2px solid #71a1fa;
+    border-radius: 20px;
+    width: 100%;
+    padding: fit-content;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+#vracilo>p {
+    padding: 2% 0;
+}
+
+#vracilo>#vrac_st {
+    width: 30%;
+}
+
+#vracilo>input {
+    font-weight: bold;
+    text-align: center;
+    width: 20%;
+}
+
+#vracilo>#vrac_dat {
+    font-weight: normal;
+}
+
+#razlog {
+    resize: none;
+    width: 50%;
+    height: 100px;
+}
+
+#oddaj {
+    text-align: center;
+    margin: 0;
+}
+
+#oddaj>input {
+    padding: 1% 5%;
+    border: 5px solid #71a1fa;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-family: system-ui;
+    transition: 0.2s;
+}
+
+#oddaj>input:hover {
+    background-color: #71a1fa;
+    cursor: pointer;
+    transition: 0.2s;
+}
