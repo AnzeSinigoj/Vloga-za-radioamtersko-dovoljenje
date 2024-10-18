@@ -8,7 +8,8 @@
     src: url(fonti/MPLUSCodeLatin.ttf);
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     font-family: font_obic;
@@ -16,19 +17,20 @@ html, body {
 }
 
 /*
-
 #0169cc -tmna
 #71a1fa -svetla
-
 */
 
 div {
     padding-bottom: 3%;
 }
-input[type=text], input[type=email], input[type=date], textarea{
+
+input[type=text],input[type=email],input[type=date],textarea {
     border: 2px solid #0169cc;
     border-radius: 5px;
     padding: 1%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .obv::after {
@@ -36,7 +38,7 @@ input[type=text], input[type=email], input[type=date], textarea{
     color: red;
 }
 
-.osivi{
+.osivi {
     cursor: pointer;
     opacity: 0.5;
 }
@@ -70,7 +72,7 @@ input[type=text], input[type=email], input[type=date], textarea{
     background: #0169cc;
 }
 
-#obrazec-main>form>#osnovni {
+#osnovni {
     padding: 3%;
     max-width: 100%;
     border-radius: 20px;
@@ -78,8 +80,12 @@ input[type=text], input[type=email], input[type=date], textarea{
     margin-bottom: 2%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background: white;
+    align-items: center;
+}
+
+#osnovni>div {
+    padding: 0;
 }
 
 #gnaslov {
@@ -95,52 +101,17 @@ input[type=text], input[type=email], input[type=date], textarea{
     font-weight: bold;
 }
 
-#ime_priimek {
-    display: flex;
-    max-width: fit-content;
-}
-
-#ime_priimek>div {
-    padding: 0;
-    text-align: left;
+#ime_priimek > div, #davcna, #tel_mail > div, #naslov, #mestoSt > div {
+    flex: 1;
     margin-right: 2%;
 }
 
-#davcna {
-    width: 100%;
-}
-#davcna>input{
-    width: 100%;
-}
-
-#tel_mail {
+#ime_priimek, #tel_mail, #mestoSt {
     display: flex;
-    max-width: fit-content;
 }
 
-#tel_mail>div {
-    padding: 0;
-    text-align: left;
-    margin-right: 2%;
-}
-
-#naslov {
-    width: 100%;
-}
-#naslov>input{
-    width: 100%;
-}
-
-#mestoSt {
-    display: flex;
-    max-width: fit-content;
-    
-}
-
-#mestoSt>div {
-    padding: 0;
-    text-align: left;
-    margin-right: 2%;
+#davcna > input, #ulica_hisna_st, #mesto, #postnaST, #telefonska, #mail {
+    width: 100%
 }
 
 #prosnja {
@@ -165,6 +136,7 @@ input[type=text], input[type=email], input[type=date], textarea{
     background-color: white;
     transition: opacity 0.5s ease;
 }
+
 #izdaja>input {
     width: 20%;
     font-weight: bold;
@@ -229,10 +201,11 @@ input[type=text], input[type=email], input[type=date], textarea{
     text-align: left;
 }
 
-#vracilo>#vrac_kz{
+#vracilo>#vrac_kz {
     text-align: center;
     width: 30%;
 }
+
 #vracilo>#dat_vrac_kz {
     text-align: center;
     font-weight: normal;
