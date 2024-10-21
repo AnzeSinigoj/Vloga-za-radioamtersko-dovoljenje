@@ -5,7 +5,11 @@
 
 @font-face {
     font-family: font_obic;
-    src: url(fonti/MPLUSCodeLatin.ttf);
+    src: url(fonti/roboto-regular-webfont.woff2);
+}
+@font-face {
+    font-family: font_fat;
+    src: url(fonti/roboto-bold-webfont.woff2);
 }
 
 html,
@@ -51,10 +55,10 @@ input[type=text],input[type=email],input[type=date],textarea {
 #slika {
     width: 20%;
     height: 10%;
-    background-image: url("slike/akos_logo.jpg");
+    background-image: url("slike/akos_logo_sl.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
     margin: 1% auto;
 }
 
@@ -93,12 +97,12 @@ input[type=text],input[type=email],input[type=date],textarea {
     padding-bottom: 5%;
     text-align: center;
     color: white;
-    font-family: system-ui;
+    font-family: font_fat;
 }
 
 #gnaslov>h1 {
     font-size: 20px;
-    font-weight: bold;
+    font-family: font_fat;
 }
 
 #ime_priimek > div, #davcna, #tel_mail > div, #naslov, #mestoSt > div {
@@ -118,12 +122,12 @@ input[type=text],input[type=email],input[type=date],textarea {
     padding-bottom: 5%;
     text-align: center;
     color: white;
-    font-family: system-ui;
+    font-family: font_fat;
 }
 
 #prosnja>h1 {
     font-size: 20px;
-    font-weight: bold;
+    font-family: font_fat;
 }
 
 #izdaja {
@@ -229,8 +233,7 @@ input[type=text],input[type=email],input[type=date],textarea {
     border: 5px solid #71a1fa;
     border-radius: 10px;
     background-color: white;
-    font-weight: bold;
-    font-family: system-ui;
+    font-family: font_fat;
     transition: 0.2s;
 }
 
