@@ -74,6 +74,7 @@ input[type=text],input[type=email],input[type=date],textarea {
     max-width: fit-content;
     margin-bottom: 5%;
     background: #0169cc;
+   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.6);
 }
 
 #osnovni {
