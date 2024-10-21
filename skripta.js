@@ -28,7 +28,7 @@ kzV1 = nk1
 kzV2 = nk2
 kzV3 = nk3
 */
-import Swal from 'sweet/dist/sweetalert2.all.js'
+
 //osnovno
 const ime = document.getElementById("ime");
 const priimek = document.getElementById("priimek");
@@ -162,7 +162,13 @@ document.getElementById('dejanska_forma').addEventListener('submit', function (e
             break;
         default:
             event.preventDefault();
-            alert('Prosim izberite eno izmed moznosti!');
+            Swal.fire({
+                title: 'Napaka!',
+                text: 'Prosimo, da izberete eno izmed možnosti!',
+                icon: 'error',
+                confirmButtonText: 'Nadaljuj',
+                confirmButtonColor: '#0169cc'
+            });
             return;
     }
 
@@ -186,10 +192,11 @@ function preveriVnose(elementi, event) {
             event.preventDefault();
             Swal.fire({
                 title: 'Napaka!',
-                text: 'Vsa označena polja so obvezna!',
+                text: 'Prosimo, da izpolnite obvezna polja!',
                 icon: 'error',
-                confirmButtonText: 'Nadaljuj'
-              })
+                confirmButtonText: 'Nadaljuj',
+                confirmButtonColor: '#0169cc'
+            });
             return;
         }
 
