@@ -102,7 +102,7 @@ kz3.addEventListener("input", maskaKlicniZnak);
 kzPodal.addEventListener("input", maskaKlicniZnak);
 
 //vracilo
-datVracKz.addEventListener("input", maskaKlicniZnak);
+kzVracila.addEventListener("input", maskaKlicniZnak);
 kzV1.addEventListener("input", maskaKlicniZnak);
 kzV2.addEventListener("input", maskaKlicniZnak);
 kzV3.addEventListener("input", maskaKlicniZnak);
