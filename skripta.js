@@ -166,6 +166,7 @@ document.getElementById('dejanska_forma').addEventListener('submit', function (e
                 title: 'Napaka!',
                 text: 'Prosimo, da izberete eno izmed možnosti!',
                 icon: 'error',
+                toast: true,
                 confirmButtonText: 'Nadaljuj',
                 confirmButtonColor: '#0169cc'
             });
@@ -194,6 +195,7 @@ function preveriVnose(elementi, event) {
                 title: 'Napaka!',
                 text: 'Prosimo, da izpolnite obvezna polja!',
                 icon: 'error',
+                toast: true,
                 confirmButtonText: 'Nadaljuj',
                 confirmButtonColor: '#0169cc'
             });
